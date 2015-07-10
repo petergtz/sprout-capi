@@ -39,11 +39,10 @@ recipes:
 
 - sprout-chruby
 
-- cf-common::sublime_text3
-- cf-common::spiff
+#- cf-common::spiff
 
-- cf-vim
-- cf-runtime
+#- cf-vim
+#- cf-runtime
 
 node_attributes:
   sprout:
@@ -118,7 +117,7 @@ node_attributes:
         - qt
         - s3cmd
         - ssh-copy-id
-        - spectacle
+        - spiff
         - tig
         - the_silver_searcher
         - tmux
@@ -129,13 +128,16 @@ node_attributes:
         - gitx-rowanj
         - github
         - google-chrome
+        - iterm2-nightly
+        - java
         - menumeters
         - mou
         - sequel-pro
         - sourcetree
+        - spectacle
         - vagrant
         - virtualbox
-        - xquartz
+        #- xquartz
         - xscope
     chruby:
       default_ruby: '2.1.6'
@@ -186,10 +188,12 @@ node_attributes:
         - git
         - fzf
         - fasd
-    custom_plugins:
-      cf-runtime:
-        - bash_it/custom/runtime-aliases.bash
-        - bash_it/custom/runtime-env.bash
+    #custom_plugins:
+    #  cf-runtime:
+    #    - bash_it/custom/runtime-aliases.bash
+    #    - bash_it/custom/runtime-env.bash
   homebrew:
     taps:
       - pivotal/tap
+      - caskroom/versions
+      - xoebus/homebrew-cloudfoundry
