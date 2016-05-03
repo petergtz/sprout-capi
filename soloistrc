@@ -204,6 +204,7 @@ node_attributes:
       - tree
       - name: universal-ctags
         head: true
+      - vim --with-lua
       - watch
       - wget
     casks:

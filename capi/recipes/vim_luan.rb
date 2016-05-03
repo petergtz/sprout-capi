@@ -17,6 +17,22 @@ link dotvim do
   owner node['sprout']['user']
 end
 
+vimrc_local_path = ::File.join(node['sprout']['home'], '.vimrc.local')
+
+cookbook_file vimrc_local_path do
+  source "vim_luan/.vimrc.local"
+  user node['sprout']['user']
+  mode "0644"
+end
+
+vimrc_local_plugins_path = ::File.join(node['sprout']['home'], '.vimrc.local.plugins')
+
+cookbook_file vimrc_local_plugins_path do
+  source "vim_luan/.vimrc.local.plugins"
+  user node['sprout']['user']
+  mode "0644"
+end
+
 execute './update --non-interactive' do
   cwd dotvim
   user node['sprout']['user']
