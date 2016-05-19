@@ -37,4 +37,4 @@ cookbook 'sprout-jetbrains-editors',
 
 cookbook 'homebrew'
 
-cookbook 'capi', path: 'capi'
+cookbook 'capi', path: '.'
