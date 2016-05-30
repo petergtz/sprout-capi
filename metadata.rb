@@ -1,4 +1,4 @@
-name             'capi'
+name             'sprout-capi'
 maintainer       'Cloud Foundry CAPI'
 maintainer_email 'cf-capi-eng@pivotallabs.com'
 license          'unlicense'
