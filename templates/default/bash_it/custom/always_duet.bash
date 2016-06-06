@@ -1,5 +1,5 @@
 function git() {
-    if [[ "$1" == commit ]] ; then
+    if [[ "$1" == commit ]] || [[ "$1" == ci ]] ; then
       shift
       command git duet-commit "$@"
     elif [[ "$1" == revert ]] ; then
